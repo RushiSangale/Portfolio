@@ -1,23 +1,41 @@
 
+import { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './Component/Navbar'
 import Hero from './Section/Hero'
 
+const themeOptions = ['light', 'dark', 'blue']
+
+const getSavedTheme = () => {
+  try {
+    const savedTheme = window.localStorage.getItem('portfolio-theme')
+    return themeOptions.includes(savedTheme) ? savedTheme : 'dark'
+  } catch {
+    return 'dark'
+  }
+}
+
 function App() {
+  const [theme, setTheme] = useState(getSavedTheme)
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem('portfolio-theme', theme)
+    } catch {
+      // The selected theme still works for this visit if storage is unavailable.
+    }
+  }, [theme])
 
   return (
-    <>
-        <div className="min-h-screen bg-black text-white">
-
-      <Navbar />
-
+    <div
+      data-theme={theme}
+      className="min-h-screen bg-[var(--page-bg)] text-[var(--text-color)] transition-colors duration-300"
+    >
+      <Navbar theme={theme} onThemeChange={setTheme} />
       <main>
         <Hero />
       </main>
-
     </div>
-      
-    </>
   )
 }
 
