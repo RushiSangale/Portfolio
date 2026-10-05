@@ -40,7 +40,7 @@ const Hero = () => {
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[32rem] opacity-80"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-128 opacity-80"
         style={{
           background:
             "radial-gradient(ellipse at 72% 10%, var(--accent-soft), transparent 66%)",
@@ -90,7 +90,7 @@ const Hero = () => {
           <motion.div variants={itemVariants} className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href="#projects"
-              className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-xl px-6 py-3 font-semibold text-(--accent-contrast) shadow-sm transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color) bg-(--accent-strong)"
+              className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-xl px-6 py-3 font-semibold text-(--accent-contrast) shadow-sm transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color) bg-(--accent-strong)"
             >
               View My Work
               <FaArrowRight aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1" />
@@ -99,7 +99,7 @@ const Hero = () => {
             <a
               href={resumePdf}
               download="Rushikesh_Sangale_Resume.pdf"
-              className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border px-6 py-3 font-semibold text-(--text-color) transition duration-200 hover:-translate-y-0.5 hover:border-(--accent-color) focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color) bg-(--surface-color) border-(--border-color)"
+              className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border px-6 py-3 font-semibold text-(--text-color) transition duration-200 hover:-translate-y-0.5 hover:border-(--accent-color)  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color) bg-(--surface-color) border-(--border-color)"
             >
               Download Resume
               <FaDownload aria-hidden="true" />
@@ -115,7 +115,7 @@ const Hero = () => {
               href="https://github.com/RushiSangale"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 transition-colors hover:text-(--accent-color) focus-visible:outline focus-visible:outline-2 focus-visible:outline-(--accent-color)"
+              className="inline-flex items-center gap-2 transition-colors hover:text-(--accent-color) focus-visible:outline-2 focus-visible:outline-(--accent-color)"
             >
               <FaGithub aria-hidden="true" className="text-lg" />
               GitHub
@@ -125,7 +125,7 @@ const Hero = () => {
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 transition-colors hover:text-(--accent-color) focus-visible:outline focus-visible:outline-2 focus-visible:outline-(--accent-color)"
+              className="inline-flex items-center gap-2 transition-colors hover:text-(--accent-color)  focus-visible:outline-2 focus-visible:outline-(--accent-color)"
             >
               <FaLinkedin aria-hidden="true" className="text-lg" />
               LinkedIn
@@ -143,7 +143,7 @@ const Hero = () => {
         >
           <div
             aria-hidden="true"
-            className="absolute -inset-3 -z-10 rounded-[2rem] opacity-70 blur-2xl"
+            className="absolute -inset-3 -z-10 rounded-4xl opacity-70 blur-2xl"
             style={{ backgroundColor: "var(--accent-soft)" }}
           />
 
