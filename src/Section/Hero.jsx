@@ -36,7 +36,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative isolate flex min-h-[calc(100svh-5rem)] items-center overflow-hidden bg-[var(--page-bg)] pb-16 pt-28 transition-colors duration-300 sm:pb-20 sm:pt-32"
+      className="relative isolate flex min-h-[calc(100svh-5rem)] items-center overflow-hidden bg-(--page-bg) pb-16 pt-28 transition-colors duration-300 sm:pb-20 sm:pt-32"
     >
       <div
         aria-hidden="true"
@@ -56,33 +56,33 @@ const Hero = () => {
         >
           <motion.p
             variants={itemVariants}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border px-3.5 py-2 text-sm font-medium text-[var(--muted-color)] [background-color:var(--surface-color)] [border-color:var(--border-color)]"
+            className="mb-6 inline-flex items-center gap-2 rounded-full border px-3.5 py-2 text-sm font-medium text-(--muted-color) bg-(--surface-color) border-(--border-color)"
           >
-            <span className="h-2 w-2 rounded-full bg-[var(--accent-strong)]" />
+            <span className="h-2 w-2 rounded-full bg-(--accent-strong)" />
             Computer Engineering Student
           </motion.p>
 
-          <motion.p variants={itemVariants} className="text-base font-medium text-[var(--accent-color)] sm:text-lg">
+          <motion.p variants={itemVariants} className="text-base font-medium text-(--accent-color) sm:text-lg">
             Hello, I&apos;m
           </motion.p>
 
           <motion.h1
             variants={itemVariants}
-            className="mt-2 max-w-3xl text-4xl font-bold leading-[1.08] tracking-tight text-[var(--text-color)] sm:text-5xl lg:text-6xl xl:text-7xl"
+            className="mt-2 max-w-3xl text-4xl font-bold leading-[1.08] tracking-tight text-(--text-color) sm:text-5xl lg:text-6xl xl:text-7xl"
           >
-            Rushikesh <span className="text-[var(--accent-color)]">Sangale</span>
+            Rushikesh <span className="text-(--accent-color)">Sangale</span>
           </motion.h1>
 
           <motion.h2
             variants={itemVariants}
-            className="mt-5 text-xl font-semibold tracking-tight text-[var(--text-color)] sm:text-2xl"
+            className="mt-5 text-xl font-semibold tracking-tight text-(--text-color) sm:text-2xl"
           >
             Java Full Stack Developer
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
-            className="mt-5 max-w-2xl text-base leading-7 text-[var(--muted-color)] sm:text-lg sm:leading-8"
+            className="mt-5 max-w-2xl text-base leading-7 text-(--muted-color) sm:text-lg sm:leading-8"
           >
             I build practical, user-focused web applications with Java, Spring Boot, React, and MySQL, bringing thoughtful interfaces together with reliable full-stack foundations.
           </motion.p>
@@ -90,7 +90,7 @@ const Hero = () => {
           <motion.div variants={itemVariants} className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href="#projects"
-              className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-xl px-6 py-3 font-semibold text-[var(--accent-contrast)] shadow-sm transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-color)] [background-color:var(--accent-strong)]"
+              className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-xl px-6 py-3 font-semibold text-(--accent-contrast) shadow-sm transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color) bg-(--accent-strong)"
             >
               View My Work
               <FaArrowRight aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1" />
@@ -99,7 +99,7 @@ const Hero = () => {
             <a
               href={resumePdf}
               download="Rushikesh_Sangale_Resume.pdf"
-              className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border px-6 py-3 font-semibold text-[var(--text-color)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--accent-color)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-color)] [background-color:var(--surface-color)] [border-color:var(--border-color)]"
+              className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border px-6 py-3 font-semibold text-(--text-color) transition duration-200 hover:-translate-y-0.5 hover:border-(--accent-color) focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color) bg-(--surface-color) border-(--border-color)"
             >
               Download Resume
               <FaDownload aria-hidden="true" />
@@ -108,14 +108,14 @@ const Hero = () => {
 
           <motion.div
             variants={itemVariants}
-            className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-[var(--muted-color)]"
+            className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-(--muted-color)"
           >
-            <span className="font-medium text-[var(--text-color)]">Find me on</span>
+            <span className="font-medium text-(--text-color)">Find me on</span>
             <a
               href="https://github.com/RushiSangale"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 transition-colors hover:text-[var(--accent-color)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--accent-color)]"
+              className="inline-flex items-center gap-2 transition-colors hover:text-(--accent-color) focus-visible:outline focus-visible:outline-2 focus-visible:outline-(--accent-color)"
             >
               <FaGithub aria-hidden="true" className="text-lg" />
               GitHub
@@ -125,7 +125,7 @@ const Hero = () => {
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 transition-colors hover:text-[var(--accent-color)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--accent-color)]"
+              className="inline-flex items-center gap-2 transition-colors hover:text-(--accent-color) focus-visible:outline focus-visible:outline-2 focus-visible:outline-(--accent-color)"
             >
               <FaLinkedin aria-hidden="true" className="text-lg" />
               LinkedIn
@@ -147,16 +147,16 @@ const Hero = () => {
             style={{ backgroundColor: "var(--accent-soft)" }}
           />
 
-          <div className="rounded-3xl border p-6 shadow-xl sm:p-8 [background-color:var(--surface-color)] [border-color:var(--border-color)]">
-            <div className="flex items-center gap-4 border-b pb-6 [border-color:var(--border-color)]">
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-[var(--accent-color)] [background-color:var(--raised-color)]">
+          <div className="rounded-3xl border p-6 shadow-xl sm:p-8 bg-(--surface-color) border-(--border-color)">
+            <div className="flex items-center gap-4 border-b pb-6 border-(--border-color)">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-(--accent-color) bg-(--raised-color)">
                 <FaCode aria-hidden="true" className="text-2xl" />
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--muted-color)]">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-(--muted-color)">
                   My developer toolkit
                 </p>
-                <h3 className="mt-1 text-lg font-semibold text-[var(--text-color)] sm:text-xl">
+                <h3 className="mt-1 text-lg font-semibold text-(--text-color) sm:text-xl">
                   Java to React
                 </h3>
               </div>
@@ -165,12 +165,12 @@ const Hero = () => {
             <div className="space-y-5 pt-6">
               {technologyGroups.map(({ label, items }) => (
                 <div key={label}>
-                  <h4 className="mb-2.5 text-sm font-medium text-[var(--muted-color)]">{label}</h4>
+                  <h4 className="mb-2.5 text-sm font-medium text-(--muted-color)">{label}</h4>
                   <ul className="flex flex-wrap gap-2" aria-label={label}>
                     {items.map((item) => (
                       <li
                         key={item}
-                        className="rounded-lg border px-3 py-1.5 text-sm text-[var(--text-color)] [background-color:var(--raised-color)] [border-color:var(--border-color)]"
+                        className="rounded-lg border px-3 py-1.5 text-sm text-(--text-color) bg-(--raised-color) border-(--border-color)"
                       >
                         {item}
                       </li>

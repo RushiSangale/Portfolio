@@ -29,7 +29,7 @@ function App() {
   return (
     <div
       data-theme={theme}
-      className="min-h-screen bg-[var(--page-bg)] text-[var(--text-color)] transition-colors duration-300"
+      className="min-h-screen bg-(--page-bg) text-(--text-color) transition-colors duration-300"
     >
       <Navbar theme={theme} onThemeChange={setTheme} />
       <main>
