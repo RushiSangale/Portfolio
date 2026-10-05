@@ -4,8 +4,6 @@ import {
   FaArrowRight,
   FaCode,
   FaDownload,
-  FaGithub,
-  FaLinkedin,
 } from "react-icons/fa";
 
 const technologyGroups = [
@@ -40,7 +38,7 @@ const Hero = () => {
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-128 opacity-80"
+        className="pointer-events-none absolute m-2.5 inset-x-0 top-0 -z-10 h-128 opacity-80"
         style={{
           background:
             "radial-gradient(ellipse at 72% 10%, var(--accent-soft), transparent 66%)",
@@ -54,13 +52,7 @@ const Hero = () => {
           animate="visible"
           className="relative z-10"
         >
-          <motion.p
-            variants={itemVariants}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border px-3.5 py-2 text-sm font-medium text-(--muted-color) bg-(--surface-color) border-(--border-color)"
-          >
-            <span className="h-2 w-2 rounded-full bg-(--accent-strong)" />
-            Computer Engineering Student
-          </motion.p>
+         
 
           <motion.p variants={itemVariants} className="text-base font-medium text-(--accent-color) sm:text-lg">
             Hello, I&apos;m
@@ -70,68 +62,72 @@ const Hero = () => {
             variants={itemVariants}
             className="mt-2 max-w-3xl text-4xl font-bold leading-[1.08] tracking-tight text-(--text-color) sm:text-5xl lg:text-6xl xl:text-7xl"
           >
-            Rushikesh <span className="text-(--accent-color)">Sangale</span>
+            Rushi <span className="text-(--accent-color)">Sangale</span>
           </motion.h1>
 
           <motion.h2
             variants={itemVariants}
-            className="mt-5 text-xl font-semibold tracking-tight text-(--text-color) sm:text-2xl"
+            className="mt-8 text-xl font-bold tracking-tight text-(--text-color) sm:text-2xl"
           >
             Java Full Stack Developer
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
-            className="mt-5 max-w-2xl text-base leading-7 text-(--muted-color) sm:text-lg sm:leading-8"
+            className="mt-8 max-w-2xl text-base leading-7 text-(--muted-color) sm:text-lg sm:leading-8"
           >
             I build practical, user-focused web applications with Java, Spring Boot, React, and MySQL, bringing thoughtful interfaces together with reliable full-stack foundations.
           </motion.p>
-
-          <motion.div variants={itemVariants} className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <a
-              href="#projects"
-              className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-xl px-6 py-3 font-semibold text-(--accent-contrast) shadow-sm transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color) bg-(--accent-strong)"
-            >
-              View My Work
-              <FaArrowRight aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1" />
-            </a>
-
-            <a
-              href={resumePdf}
-              download="Rushikesh_Sangale_Resume.pdf"
-              className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border px-6 py-3 font-semibold text-(--text-color) transition duration-200 hover:-translate-y-0.5 hover:border-(--accent-color)  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color) bg-(--surface-color) border-(--border-color)"
-            >
-              Download Resume
-              <FaDownload aria-hidden="true" />
-            </a>
-          </motion.div>
-
+<br />
           <motion.div
-            variants={itemVariants}
-            className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-(--muted-color)"
-          >
-            <span className="font-medium text-(--text-color)">Find me on</span>
-            <a
-              href="https://github.com/RushiSangale"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 transition-colors hover:text-(--accent-color) focus-visible:outline-2 focus-visible:outline-(--accent-color)"
-            >
-              <FaGithub aria-hidden="true" className="text-lg" />
-              GitHub
-              <span className="sr-only"> (opens in a new tab)</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 transition-colors hover:text-(--accent-color)  focus-visible:outline-2 focus-visible:outline-(--accent-color)"
-            >
-              <FaLinkedin aria-hidden="true" className="text-lg" />
-              LinkedIn
-              <span className="sr-only"> (opens in a new tab)</span>
-            </a>
-          </motion.div>
+  variants={itemVariants}
+  className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap"
+>
+  {/* View My Work */}
+  <a
+    href="#projects"
+    className="
+      group inline-flex min-h-12 items-center justify-center gap-3
+      rounded-xl px-6 py-3
+      bg-(--accent-strong) text-(--accent-contrast)
+      font-semibold shadow-sm
+      transition duration-200
+      hover:-translate-y-0.5 hover:brightness-110
+      focus-visible:outline-2
+      focus-visible:outline-offset-2
+      focus-visible:outline-(--accent-color)
+    "
+  >
+    <span>View My Work</span>
+
+    <FaArrowRight
+      aria-hidden="true"
+      className="transition-transform duration-200 group-hover:translate-x-1"
+    />
+  </a>
+  {/* Download Resume */}
+  <a
+    href={resumePdf}
+    download="Rushikesh_Sangale_Resume.pdf"
+    className="
+      inline-flex min-h-12 items-center justify-center gap-3
+      rounded-xl border px-6 py-3
+      bg-(--surface-color) border-(--border-color)
+      text-(--text-color)
+      font-semibold
+      transition duration-200
+      hover:-translate-y-0.5 hover:border-(--accent-color)
+      focus-visible:outline-2
+      focus-visible:outline-offset-2
+      focus-visible:outline-(--accent-color)
+    "
+  >
+    <span>Download Resume</span>
+
+    <FaDownload aria-hidden="true" />
+  </a>
+  <br />
+</motion.div>
         </motion.div>
 
         <motion.aside
@@ -139,7 +135,7 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration, delay: shouldReduceMotion ? 0 : 0.12 }}
           aria-label="Technology stack"
-          className="relative mx-auto w-full max-w-lg lg:ml-auto"
+          className="relative mx-auto w-400 max-w-lg lg:ml-auto"
         >
           <div
             aria-hidden="true"
