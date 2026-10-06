@@ -12,10 +12,10 @@ import {
 
 const navigationLinks = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
+  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -83,7 +83,7 @@ const Navbar = ({ theme, onThemeChange }) => {
               aria-expanded={isThemeMenuOpen}
               aria-controls="theme-options"
               onClick={() => setIsThemeMenuOpen((open) => !open)}
-              className="flex h-10 w-10 items-center justify-center rounded-lg border text-(--muted-color) transition duration-200 hover:-translate-y-0.5 hover:text-(--text-color) focus-visible:outline focus-visible:outline-2 focus-visible:outline-(--accent-color) border-(--border-color)"
+              className="flex h-10 w-10 items-center justify-center rounded-lg border text-(--muted-color) transition duration-200 hover:-translate-y-0.5 hover:text-(--text-color) focus-visible:outline-2 focus-visible:outline-(--accent-color) border-(--border-color)"
             >
               <FaPalette aria-hidden="true" />
             </button>
@@ -105,7 +105,7 @@ const Navbar = ({ theme, onThemeChange }) => {
                       onThemeChange(value);
                       setIsThemeMenuOpen(false);
                     }}
-                    className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-(--text-color) transition-colors hover:bg-(--raised-color) focus-visible:outline focus-visible:outline-2 focus-visible:outline-(--accent-color)"
+                    className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-(--text-color) transition-colors hover:bg-(--raised-color) focus-visible:outline-2 focus-visible:outline-(--accent-color)"
                   >
                     <span
                       aria-hidden="true"
@@ -127,7 +127,7 @@ const Navbar = ({ theme, onThemeChange }) => {
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
             onClick={() => setIsMenuOpen((open) => !open)}
-            className="flex h-10 w-10 items-center justify-center rounded-lg border text-(--muted-color) transition-colors duration-200 hover:text-(--text-color) focus-visible:outline focus-visible:outline-2 focus-visible:outline-(--accent-color) border-(--border-color) lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-lg border text-(--muted-color) transition-colors duration-200 hover:text-(--text-color) focus-visible:outline-2 focus-visible:outline-(--accent-color) border-(--border-color) lg:hidden"
           >
             {isMenuOpen ? <FaTimes aria-hidden="true" /> : <FaBars aria-hidden="true" />}
           </button>
@@ -145,7 +145,7 @@ const Navbar = ({ theme, onThemeChange }) => {
                 key={label}
                 href={href}
                 onClick={closeMenu}
-                className="rounded-lg px-3 py-3 text-sm text-(--muted-color) transition-colors hover:bg-(--raised-color) hover:text-(--accent-color) focus-visible:outline focus-visible:outline-2 focus-visible:outline-(--accent-color)"
+                className="rounded-lg px-3 py-3 text-sm text-(--muted-color) transition-colors hover:bg-(--raised-color) hover:text-(--accent-color) focus-visible:outline-2 focus-visible:outline-(--accent-color)"
               >
                 {label}
               </a>

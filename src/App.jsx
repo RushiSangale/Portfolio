@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './Component/Navbar'
 import Hero from './Section/Hero'
+import Skills from './Section/Skills'
 
 const themeOptions = ['light', 'dark', 'blue']
 
@@ -34,6 +35,7 @@ function App() {
       <Navbar theme={theme} onThemeChange={setTheme} />
       <main>
         <Hero />
+        <Skills />
       </main>
     </div>
   )
