@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './Component/Navbar'
 import Hero from './Section/Hero'
 import Skills from './Section/Skills'
+import Projects from './Section/Projects'
 
 const themeOptions = ['light', 'dark', 'blue']
 
@@ -36,6 +37,7 @@ function App() {
       <main>
         <Hero />
         <Skills />
+        <Projects />
       </main>
     </div>
   )
