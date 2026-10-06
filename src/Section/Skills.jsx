@@ -107,7 +107,7 @@ const Skills = () => {
               initial={shouldReduceMotion ? false : { opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: shouldReduceMotion ? 0 : 0.4, delay: shouldReduceMotion ? 0 : index * 0.06 }}
+              transition={{ duration: shouldReduceMotion ? 0 : 0.4, delay: shouldReduceMotion ? 0 : index * 0.05 }}
               className={`group rounded-2xl border p-5 transition duration-200 hover:-translate-y-1 hover:border-(--accent-color) hover:shadow-lg hover:shadow-blue-950/10 bg-(--surface-color) border-(--border-color) sm:p-6 ${index < 3 ? "lg:col-span-2" : "lg:col-span-3"}`}
             >
               <div className="mb-5 flex items-center gap-3">
