@@ -5,6 +5,8 @@ import Navbar from './Component/Navbar'
 import Hero from './Section/Hero'
 import Skills from './Section/Skills'
 import Projects from './Section/Projects'
+import Education from './Section/Education'
+import About from './Section/About'
 
 const themeOptions = ['light', 'dark', 'blue']
 
@@ -38,6 +40,8 @@ function App() {
         <Hero />
         <Skills />
         <Projects />
+        <Education />
+        <About />
       </main>
     </div>
   )
