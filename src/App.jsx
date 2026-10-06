@@ -7,6 +7,7 @@ import Skills from './Section/Skills'
 import Projects from './Section/Projects'
 import Education from './Section/Education'
 import About from './Section/About'
+import Contact from './Section/Contact'
 
 const themeOptions = ['light', 'dark', 'blue']
 
@@ -42,6 +43,7 @@ function App() {
         <Projects />
         <Education />
         <About />
+        <Contact />
       </main>
     </div>
   )
