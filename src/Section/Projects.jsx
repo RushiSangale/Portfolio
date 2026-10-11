@@ -110,7 +110,7 @@ const Projects = () => {
                   <div
                     role="img"
                     aria-label="Movie booking project image placeholder"
-                    className="flex h-full w-full flex-col items-center justify-center gap-3 bg-gradient-to-br from-(--raised-color) via-(--surface-color) to-(--raised-color) text-(--muted-color)"
+                    className="flex h-full w-full flex-col items-center justify-center gap-3 bg-linear-to-br from-(--raised-color) via-(--surface-color) to-(--raised-color) text-(--muted-color)"
                   >
                     <span className="flex h-14 w-14 items-center justify-center rounded-2xl border text-(--accent-color) bg-(--surface-color) border-(--border-color)" aria-hidden="true">
                       <FaFilm className="text-2xl" />
