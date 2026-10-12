@@ -26,6 +26,7 @@ const projects = [
       "Secure user authentication with Spring Security and JWT",
       "REST APIs with database integration",
     ],
+
   },
   {
     name: "Gym Management System",
@@ -54,6 +55,7 @@ const projects = [
       "Shopping cart and checkout form interface",
       "Responsive user interface",
     ],
+        githubUrl: "https://rushisangale.github.io/My_E_Comm_Website/",
   },
 ];
 
@@ -167,15 +169,17 @@ const Projects = () => {
                   </ul>
                 </div>
 
-                <div className="mt-auto flex flex-wrap gap-3 pt-6">
-                  <span
-                    aria-label={`${project.name}: GitHub repository URL needed`}
-                    title="Add the public GitHub repository URL to enable this link."
-                    className="inline-flex min-h-10 items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold text-(--muted-color) bg-(--raised-color) border-(--border-color)"
-                  >
-                    <FaGithub aria-hidden="true" />
-                    GitHub link needed
-                  </span>
+              <div className="mt-auto flex flex-wrap gap-3 pt-6">
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${project.name} source code on GitHub`}
+                  className="inline-flex min-h-10 items-center gap-2 rounded-lg border px-4 py-2 text-sm font-semibold text-white bg-(--raised-color) border-(--border-color) transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:text-blue-400"
+                >
+                <FaGithub aria-hidden="true" />
+                  View on GitHub
+                </a>
                 </div>
               </div>
             </motion.article>
