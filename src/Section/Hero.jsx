@@ -1,5 +1,5 @@
 import { useReducedMotion, motion } from "framer-motion";
-import resumePdf from "../assets/Rushikesh_Sangale_Resume.pdf";
+import resumePdf from "../assets/Rushikesh_Sangale_Resume";
 import { FaArrowRight, FaCode, FaDownload } from "react-icons/fa";
 
 const technologyGroups = [
